@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="script">
+            <div id="particles-js"></div>
+            <div class="slide-menu">
+                <input id="slide-menu-right" class="menu-toggle" type="checkbox" />
+                <div class="menu-wrap">
+                    <label for="slide-menu-right" class="menu-close" onclick="hide();">Close</label> <img src="https://cdn.discordapp.com/attachments/881358293807820800/895539792622784562/menacelogo.png" width="288.5" height="169" />
+                    <div class="menu-title"></div>
+                    <div class="menu-list">
+                        <ul>
+                            <li><a class="hej1" href="#" onclick="leaderboards();">Leaderboards</a></li>
+                        </ul>
+                    </div>
+                    <h1 class="menu-bottom">SERVER 1 - US MAIN - Menace RP</h1>
+                </div>
+            </div>
+            <div class="everything">
+                <div class="leaderboards">
+                    <div class="titlelmao">LEADERBOARDS</div>
+                    <div class="clickablebox" onclick="managegang();">
+                        <img style="display: block; margin: auto; margin-top: 3.5%;" src="https://media.discordapp.net/attachments/868344791841247232/877771559979331594/white.png" width="200" height="200" /> <a>WAGER LEADERBOARD</a>
+                    </div>
+                    <div class="clickablebox click2" onclick="managegang2();">
+                        <img style="display: block; margin: auto; margin-top: 3.5%;" src="https://media.discordapp.net/attachments/868344791841247232/877771559979331594/white.png" width="200" height="200" /> <a>2v2 WAGER LEADERBOARD</a>
+                    </div>
+                    <div class="clickablebox click3" onclick="managetopgangs2();">
+                        <img style="display: block; margin: auto; margin-top: 3.5%;" src="https://cdn.discordapp.com/attachments/868344791841247232/877775675841458186/new3.png" width="200" height="200" /> <a>TOP GANGS</a>
+                    </div>
+                </div>
+                <div class="managegang">
+                    <div class="titlelmao">WAGER LEADERBOARD</div>
+                    <table class="wagerlist">
+                        <thead>
+                            <tr>
+                                <th>RANK</th>
+                                <th>NAME</th>
+                                <th id="a">WINS</th>
+                                <th>LOSSES</th>
+                                <th>KILLS</th>
+                                <th>DEATHS</th>
+                            </tr>
+                        </thead>
+                        <tbody class="wager0"></tbody>
+                    </table>
+                </div>
+                <div class="managegang2">
+                    <div class="titlelmao">2v2 WAGER LEADERBOARD</div>
+                    <table class="wagerlist2">
+                        <thead>
+                            <tr>
+                                <th>RANK</th>
+                                <th>NAME</th>
+                                <th id="a">WINS</th>
+                                <th>LOSSES</th>
+                                <th>KILLS</th>
+                                <th>DEATHS</th>
+                            </tr>
+                        </thead>
+                        <tbody class="wager0"></tbody>
+                    </table>
+                </div>
+                <div class="managegang3">
+                    <div class="titlelmao">Top Gangs</div>
+                    <table class="wagerlist3">
+                        <thead>
+                            <tr>
+                                <th>Gang</th>
+                                <th>XP</th>
+                                <th id="a">Gang wars Won</th>
+                                <th>Airdrops</th>
+                                <th>Kills</th>
+                                <th>Deaths</th>
+                                <th>K/D</th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <div class="wala" style="height: 100vh; overflow: auto;">
+                        <table>
+                            <tbody class="gangs"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="board">
+            <div class="v15_40"></div>
+            <div class="v15_41"></div>
+            <span class="v15_44">0</span>
+            <span class="v15_46">0:00</span>
+            <span class="v15_47">ROUND 1</span>
+            <span class="v15_49">0</span>
+        </div>
+    </body>
+</html>
